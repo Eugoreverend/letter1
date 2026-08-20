@@ -65,31 +65,7 @@ If not, let this be a message in a bottle, cast into the cosmic sea—because I 
       </div>
     </div>
 
-    <audio id="bgMusic" loop>
-      <source src="Lost in Thoughts.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-
-   
-
-    <script>
-  const playBtn = document.getElementById("playBtn");
-  const bgMusic = document.getElementById("bgMusic");
-  const message = document.getElementById("message");
-
-  playBtn.addEventListener("click", () => {
-    bgMusic.play();
-    playBtn.style.display = "none"; // Hide the button after playing
-
-    // Smooth scroll into the message area
- 
-  message.scrollIntoView({ behavior: "smooth" });
- window.addEventListener("load", () => {
-    if (window.innerWidth <= 768) {
-      document.getElementById("message").scrollIntoView({ behavior: "smooth" });
-    }
-  });
-    </script>
+    
 
   </body>
 </html>
